@@ -1,40 +1,121 @@
-/* Data
-Studio - #000000
-Main black - #212121 
-Main blue - #2196F3
-Main white - #FFFFFF
-mail phone no active and p - #757575
-footer mail phone - rgba(255, 255, 255, 0.6)
-main bgd - #FFFFFF
-hero and footer bgd - #2F303A
-team bgd, portfolio buttons bgd - #F5F4FA
-stroke - #EEEEEE */
-
 :root {
     --main-text-color:#212121;
-
+    --blue-text-color:#2196F3;
+    --white-text-color:#FFFFFF;
+    --footer-contacts-text:rgba(255, 255, 255, 0.6);
+    --add-text-color:#757575;
+    --main-bgd:#FFFFFF;
+    --hero-footer-bgd:#2F303A;
+    --add-bgd:#F5F4FA;
+    --button-active-bgd:#2196F3;
+    --stroke-color:#EEEEEE;
 }
 
 body {
-    background-color: #ffffff;
-    color:#212121;
-    font-family: 'Roboto', 'Raleway', sans-serif;
-
+    background-color: var(--main-bgd);
+    color:var(--main-text-color);
+    font-family: 'Roboto', sans-serif;
 }
 
-.footer {
-    background-color: #2F303A;
+.footer  {
+    background-color: var(--hero-footer-bgd);
 }
 
 .hero-section {
-    background-color: #2F303A;
+    background-color: var(--hero-footer-bgd);
+    color: var(--white-text-color);
+}
+.hero-button {
+    background-color: var(--button-active-bgd);
+    color: var(--white-text-color);
+    font-family: inherit;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    cursor: pointer;
 }
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--add-bgd);
 }
 
-.top-contacts a {
-    color: #757575;
+.top-contacts .contact-link {
+    color: var(--add-text-color);
     text-decoration: none;
+}
+
+.top-contacts .contact-link:hover,
+.top-contacts .contact-link:focus,
+.top-contacts .contact-link:active {
+    color:var(--blue-text-color);
+}
+
+.nav-menu .nav-link {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link:focus,
+.nav-menu .nav-link:active {
+    color:var(--blue-text-color);
+}
+
+.filter-buttons-list .filter-button:hover,
+.filter-buttons-list .filter-button:focus {
+    background-color: var(--button-active-bgd);
+    color: var(--white-text-color);
+    cursor: pointer;
+}
+
+.filter-buttons-list .filter-button {
+    background-color: var(--add-bgd);
+    font-family: inherit;
+}
+
+.footer-data .footer-address {
+    color: var(--white-text-color);
+    text-decoration: none;
+}
+
+.footer-data .footer-address:hover,
+.footer-data .footer-address:focus {
+    color: var(--blue-text-color);
+    text-decoration: none;
+}
+
+.footer-data .footer-contacts {
+    color: var(--footer-contacts-text);
+    text-decoration: none;
+}
+
+.footer-data .footer-contacts:hover,
+.footer-data .footer-contacts:focus {
+    color: var(--blue-text-color);
+    text-decoration: none;
+}
+
+.header-logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--blue-text-color);
+}
+
+.footer-logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--blue-text-color);
+}
+
+.list {
+    list-style: none;
 }
