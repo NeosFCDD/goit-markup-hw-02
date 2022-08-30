@@ -1,0 +1,40 @@
+/* Data
+Studio - #000000
+Main black - #212121 
+Main blue - #2196F3
+Main white - #FFFFFF
+mail phone no active and p - #757575
+footer mail phone - rgba(255, 255, 255, 0.6)
+main bgd - #FFFFFF
+hero and footer bgd - #2F303A
+team bgd, portfolio buttons bgd - #F5F4FA
+stroke - #EEEEEE */
+
+:root {
+    --main-text-color:#212121;
+
+}
+
+body {
+    background-color: #ffffff;
+    color:#212121;
+    font-family: 'Roboto', 'Raleway' sans-serif;
+
+}
+
+.footer {
+    background-color: #2F303A;
+}
+
+.hero-section {
+    background-color: #2F303A;
+}
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.top-contacts a {
+    color: #757575;
+    text-decoration: none;
+}
