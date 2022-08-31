@@ -129,13 +129,6 @@ body {
     color: var(--main-text-color);
 }
 
-.header-logo:hover,
-.header-logo:focus,
-.footer-logo:hover,
-.footer-logo:focus {
-    color: var(--blue-text-color);
-}
-
 .footer-logo {
     text-decoration: none;
     font-family: 'Raleway';
@@ -149,9 +142,13 @@ body {
     color: var(--blue-text-color);
 }
 
+.header-logo:hover,
+.header-logo:focus,
+.footer-logo:hover,
+.footer-logo:focus,
 .logo:hover,
 .logo:focus {
-    color: var(--main-text-color);
+    color: var(--blue-text-color);
 }
 
 .list {
