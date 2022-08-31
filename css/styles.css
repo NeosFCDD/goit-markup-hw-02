@@ -77,8 +77,7 @@ body {
 }
 
 .nav-menu .nav-link:hover,
-.nav-menu .nav-link:focus,
-.nav-menu .nav-link:active {
+.nav-menu .nav-link:focus {
     color:var(--blue-text-color);
 }
 
