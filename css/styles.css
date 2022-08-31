@@ -177,3 +177,9 @@ body {
     font-size: 36px;
     line-height: 1.17;
 }
+
+.hide {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
